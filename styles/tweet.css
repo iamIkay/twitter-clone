@@ -1,7 +1,7 @@
 .tweet {
     display: flex;
     flex-direction: column;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 20px 10px 20px;
     border: 0.001px solid #CFD9DE;
 
 }
@@ -36,14 +36,24 @@
     letter-spacing: 1px;
 }
 
-.username {
-    margin-left: 5px;
-    font-weight: 400;
-    color: #536471;
-
+.display-name {
+    display: flex;
+    align-items: center;
+    color: black;
 }
 
-.tweet-text {
+.username {
+    margin-left: 3px;
+    font-weight: 400;
+    color: #536471;
+}
+
+.verification-badge {
+    padding-left: 3px;
+}
+
+.tweet-text,
+.quoted-text {
     line-height: 1.3;
     color: black;
     padding-right: 35px;
@@ -52,7 +62,7 @@
 /* Tweet Media Style */
 
 .tweet-media {
-    margin-top: 30px;
+    margin-top: 15px;
     height: 310px;
     display: flex;
     border-radius: 20px;
@@ -64,7 +74,8 @@
 .media,
 .media2,
 .media3,
-.media4 {
+.media4,
+.media6 {
     height: inherit;
     object-fit: cover;
 }
@@ -103,6 +114,12 @@
     margin-top: 30px;
 }
 
+.media6 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50%;
+}
+
 .tweet-media1,
 .tweet-media2 {
     display: flex;
@@ -132,7 +149,7 @@
 
 .tweet-actions {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     padding-right: 60px;
     justify-content: space-between;
@@ -151,7 +168,6 @@
 
 
 .tweet-column1 {
-    height: 100%;
     width: 50px;
     margin-right: 15px;
     display: flex;
@@ -163,20 +179,18 @@
 
 .tweet-line,
 .tweet-line2 {
-    height: 480px;
     width: 1.5px;
+    flex: 1;
     background-color: #CFD9DE;
 }
 
-.tweet-line2 {
-    height: 630px;
-}
+
 
 .tweet-row2 {
     color: #1D9BF0;
     display: flex;
     align-items: center;
-    padding: 6px 0px;
+
     width: 100%;
 
 
@@ -189,12 +203,15 @@
 }
 
 
-.quoted-tweet {
+/* Quoted Tweet Styles */
+
+.quoted-tweet,
+.quoted-tweet-min {
     border: 1.5px solid #CFD9DE;
-    border-radius: 20px;
+    border-radius: 15px;
     padding-top: 10px;
     padding-bottom: 0px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .quoted-tweet .tweet-text {
@@ -204,6 +221,7 @@
 
 .quoted-tweet .tweet-details {
     padding-left: 10px;
+    display: flex;
 }
 
 .quoted-tweet .media5 {
@@ -213,7 +231,51 @@
     border-top-right-radius: 0;
 }
 
-.quoted-tweet .tweet-profile {
+.quoted-tweet .tweet-profile,
+.quoted-tweet-min .tweet-profile {
     height: 22px;
     margin-right: 4px;
+}
+
+.quoted-tweet .display-name,
+.quoted-tweet-min .display-name {
+    flex: 2;
+}
+
+.quoted-tweet .tweet-media {
+    height: 0px;
+    margin-top: 0px;
+    border-radius: 0px;
+}
+
+.quoted-tweet-min {
+    padding: 10px;
+}
+
+.quoted-tweet-min .media,
+.quoted-tweet-min .media6 {
+    height: 100px;
+    width: 50px;
+}
+
+.quoted-tweet-min .tweet-media {
+    height: 100px;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.quoted-tweet-min .tweet-contents {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.quoted-tweet-min .tweet-text {
+    display: inline-block;
+    flex: 2;
+    margin-left: 10px;
+}
+
+.quoted-text {
+    margin-top: 5px;
 }
