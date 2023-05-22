@@ -1,0 +1,153 @@
+.sidebar {
+    flex: 2.3;
+}
+
+.search-bar {
+    display: block;
+    margin-top: 5px;
+    border-radius: 30px;
+    height: 40px;
+    border: none;
+    background-color: rgb(247, 249, 249);
+    color: #536471;
+    font-size: 16px;
+    padding-left: 50px;
+    margin-right: 90px;
+    margin-left: 50px;
+    flex: 1;
+}
+
+
+.input-icons i {
+    position: absolute;
+    top: 7px;
+    margin-left: 52px;
+    padding: 9px 20px;
+    color: #536471;
+
+}
+
+.input-icons {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.trends {
+    background-color: rgb(247, 249, 249);
+    margin-left: 50px;
+    margin-right: 90px;
+    border-radius: 10px;
+}
+
+.trend,
+.show-more {
+    padding: 10px 30px 10px 15px;
+}
+
+.trend-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #536471;
+}
+
+.trend-name {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+.tweet-count {
+    font-size: 14px;
+    color: #536471;
+}
+
+.trend:hover,
+.show-more:hover,
+.who-to-follow:hover {
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+
+
+}
+
+.show-more {
+    color: #1D9BF0;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 14px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.show-more:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.who-to-follow {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.who-to-follow .profile-pic {
+    height: 45px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.who-to-follow .name {
+    margin-bottom: 3px;
+}
+
+.who-to-follow .username {
+    font-size: 13px;
+}
+
+.who-to-follow .follow-btn {
+    height: 26px;
+    padding: 0px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    border: none;
+    background-color: rgb(15, 20, 25);
+    color: white;
+    font-weight: 600;
+}
+
+.who-to-follow .verification-badge {
+    height: 17px;
+}
+
+.footer {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 90px;
+
+}
+
+.footer-item {
+    padding: 5px;
+    color: #536471;
+    font-size: 12px;
+}
+
+.footer-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

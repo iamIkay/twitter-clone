@@ -18,17 +18,13 @@ nav {
 main {
     flex: 3;
     height: 2000px;
+    margin-top: 200px;
     margin-left: 350px;
-
-
-}
-
-.sidebar {
-    flex: 1.7;
-    min-width: 0px;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
 
 }
+
 
 .menu-item {
     display: flex;
@@ -79,6 +75,7 @@ main {
     font-size: 14px;
     font-weight: 500;
     align-items: center;
+    padding-right: 20px;
 }
 
 header {

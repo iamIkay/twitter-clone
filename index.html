@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/tweet.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
 
 
 </head>
@@ -121,16 +124,14 @@
                 </button>
             </div>
         </header>
-        <div style="flex:1.7;">
+        <div style="flex:2.3;">
         </div>
     </div>
 
 
     <main>
 
-        <div class="new-tweet" style="height: 200px; width: 100%;">
-
-        </div>
+        <div class="new-tweet" style="height: 200px; width: 100%;background-color: #1D9BF0;"></div>
 
         <!--Tweet 1-->
 
@@ -781,7 +782,150 @@
 
     </main>
     <div class="sidebar">
-        sidebar
+        <div class="input-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Search Twitter" class="search-bar" type="text">
+        </div>
+
+        <div class="trends">
+            <h2 style="padding-left: 15px; padding-top: 10px;margin-bottom: 10px">Trends for you</h2>
+
+            <div class=" trend">
+                <div class="trend-title">Trending in Nigeria <img src="icons/more.svg" height="14px"> </div>
+                <div class="trend-name">25% in FCT</div>
+                <div class="tweet-count">8,592 Tweets</div>
+            </div>
+
+            <div class="trend">
+                <div class="trend-title">Trending<img src="icons/more.svg" height="14px"> </div>
+                <div class="trend-name">Kwankwaso</div>
+                <div class="tweet-count">5,348 Tweets</div>
+            </div>
+
+            <div class="trend">
+                <div class="trend-title">Music &#8226 Trending<img src="icons/more.svg" height="14px"> </div>
+                <div class="trend-name">Seyi</div>
+                <div class="tweet-count">60.8K Tweets</div>
+            </div>
+
+            <div class="trend">
+                <div class="trend-title">Trending in Nigeria<img src="icons/more.svg" height="14px"> </div>
+                <div class="trend-name">John Doe</div>
+                <div class="tweet-count">4,476 Tweets</div>
+            </div>
+
+            <div class="trend">
+                <div class="trend-title">Entertainment &#8226 Trending<img src="icons/more.svg" height="14px"> </div>
+                <div class="trend-name">Rahama Sadau</div>
+                <div class="tweet-count"></div>
+            </div>
+
+            <div class="trend">
+                <div class="trend-title">Sports &#8226 Trending<img src="icons/more.svg" height="14px"> </div>
+                <div class="trend-name">Racism</div>
+                <div class="tweet-count">92.1K Tweets</div>
+            </div>
+
+            <div class="trend">
+                <div class="trend-title">Trending in Nigeria<img src="icons/more.svg" height="14px"> </div>
+                <div class="trend-name">Toke</div>
+                <div class="tweet-count">7,442 Tweets</div>
+            </div>
+            <div class="trend">
+                <div class="trend-title">Trending<img src="icons/more.svg" height="14px"> </div>
+                <div class="trend-name">Pastor</div>
+                <div class="tweet-count">49.2K Tweets</div>
+            </div>
+            <div class="trend">
+                <div class="trend-title">Entertainment &#8226 Trending<img src="icons/more.svg" height="14px">
+                </div>
+                <div class="trend-name">Hank</div>
+                <div class="tweet-count">12.6K Tweets</div>
+            </div>
+            <div class="trend">
+                <div class="trend-title">Music &#8226 Trending<img src="icons/more.svg" height="14px">
+                </div>
+                <div class="trend-name">Burna</div>
+                <div class="tweet-count">79.3K Tweets</div>
+            </div>
+
+            <div class="show-more">
+                Show more
+            </div>
+
+        </div>
+
+        <div class="trends">
+            <h2 style="padding-left: 15px; padding-top: 10px;margin-bottom: 10px">Who to follow</h2>
+
+            <div class="who-to-follow">
+                <img class="profile-pic" src="images/follow-profile1.png">
+
+                <div style="display: flex; flex-direction: column;  flex: 2;">
+                    <div class="name">Kalu Aja</div>
+
+                    <div class="username">@FinPlanKaluAia1</div>
+                </div>
+                <div><button class="follow-btn">Follow</button></div>
+            </div>
+
+            <div class="who-to-follow">
+                <img class="profile-pic" src="images/follow-profile2.jpeg">
+
+                <div style="display: flex; flex-direction: column;  flex: 2;">
+                    <div class="name">A Distinguished Fi...<img class="verification-badge"
+                            src="icons/verification-badge.svg"></div>
+
+                    <div class="username">@General Oluchi</div>
+                </div>
+                <div><button class="follow-btn">Follow</button></div>
+            </div>
+
+            <div class="who-to-follow">
+                <img class="profile-pic" src="images/follow-profile3.jpeg">
+
+                <div style="display: flex; flex-direction: column;  flex: 2;">
+                    <div class="name">Tobi Bakre</div>
+
+                    <div class="username">@tobibakre</div>
+                </div>
+                <div><button class="follow-btn">Follow</button></div>
+            </div>
+
+            <div class="show-more">
+                Show more
+            </div>
+        </div>
+
+        <br>
+
+        <div class="footer">
+            <div class="footer-item">
+                Terms of Service
+            </div>
+            <div class="footer-item">
+                Privacy Policy
+            </div>
+            <div class="footer-item">
+                Cookie Policy
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-item">
+                Accessibility
+            </div>
+            <div class="footer-item">
+                Ads info
+            </div>
+            <div class="footer-item">
+                More <img src="icons/more.svg" style="height: 10px;">
+            </div>
+            <div class="footer-item">
+                © 2023 X Corp.
+            </div>
+        </div>
+
     </div>
 
 
