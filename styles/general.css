@@ -18,7 +18,7 @@ nav {
 main {
     flex: 3;
     height: 2000px;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 350px;
     display: flex;
     flex-direction: column;
@@ -40,20 +40,6 @@ main {
     size: 14px;
 }
 
-.tweet-button {
-    margin-top: 30px;
-    width: 85%;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    background-color: rgb(29, 155, 240);
-    color: white;
-    border: none;
-    border-radius: 30px;
-    font-weight: 600;
-    text-align: center;
-    font-size: 16px;
-
-}
 
 
 .user-info {
@@ -93,7 +79,8 @@ header {
 
 .tab {
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
+
 
 }
 
@@ -104,14 +91,23 @@ header {
     flex: 2;
     background-color: transparent;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-}
 
+}
 
 .tabLink:hover {
     cursor: pointer;
     background-color: rgb(244, 244, 244);
 
 
+}
+
+.tab-indicator {
+    height: 3px;
+    background-color: #1D9BF0;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 130px;
 }

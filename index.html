@@ -117,11 +117,15 @@
             <div class="tab">
                 <button class="tabLink">
                     For you
+
                 </button>
+
+
 
                 <button class="tabLink">
                     Following
                 </button>
+                <div class="tab-indicator"></div>
             </div>
         </header>
         <div style="flex:2.3;">
@@ -131,7 +135,38 @@
 
     <main>
 
-        <div class="new-tweet" style="height: 200px; width: 100%;background-color: #1D9BF0;"></div>
+        <div class="new-tweet">
+            <div>
+                <img class="profile" src="images/profile-pic.jpeg">
+            </div>
+            <div style="display: flex; flex-direction: column; width: 100%; padding-left: 10px;">
+
+                <input class="tweet-input" placeholder="What is happening?!">
+
+                <button class="who-can-reply">
+                    <img src="icons/globe-icon.svg" height="16px" style="margin-right: 4px;"> Everyone can reply
+                </button>
+
+                <div style="background-color:#CFD9DE;opacity:0.6; display: flex; height: 1px; margin: 10px 0px;"></div>
+
+                <div class="new-tweet-actions">
+                    <div style="display: flex; width: 100%;">
+
+                        <img class="new-tweet-action" src="icons/tweet-image-icon.svg">
+                        <img class="new-tweet-action" src="icons/tweet-gif-icon.svg" height="25px">
+                        <img class="new-tweet-action" src="icons/tweet-poll-icon.svg">
+                        <img class="new-tweet-action" src="icons/tweet-schedule-icon.svg">
+                        <img class="new-tweet-action" src="icons/location-icon.svg">
+
+
+                    </div>
+
+                    </button>
+                    <button class="tweet-button">Tweet
+
+                </div>
+            </div>
+        </div>
 
         <!--Tweet 1-->
 
